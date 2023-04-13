@@ -50,25 +50,31 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initDoctors() {
+        // Used my phone number
         doctor1 = Doctor(
-            "Azamat",
-            "Novikov"
+            name = "Azamat",
+            lastName = "Novikov",
+            email = "anovikov@gmail.com"
         )
         doctor2 = Doctor(
             "Zamir",
-            "Nurmatov"
+            "Nurmatov",
+            "znurmatov@gmail.com"
         )
         doctor3 = Doctor(
             "Munisa",
-            "Khalilova"
+            "Khalilova",
+            "mkhalilova@gmail.com"
         )
         doctor4 = Doctor(
             "Adina",
-            "Alieva"
+            "Alieva",
+            "aalieva@gmail.com"
         )
         doctor5 = Doctor(
             "Viktoria",
-            "Kolesova"
+            "Kolesova",
+            "vkolesova@gmail.com"
         )
     }
 

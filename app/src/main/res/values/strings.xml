@@ -18,4 +18,6 @@
     <string name="our_location">Our Location</string>
     <string name="address">Shopping center Asia Mall\n1st floor</string>
     <string name="open_map">Open map</string>
+    <string name="failed_to_save_contact">Failed to save contact</string>
+    <string name="choose_email_client">Choose an Email client</string>
 </resources>

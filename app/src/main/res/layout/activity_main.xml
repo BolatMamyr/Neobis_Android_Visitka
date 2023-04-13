@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,173 +7,181 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="14dp"
-        android:text="@string/doctors"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginHorizontal="14dp"
-        android:layout_marginTop="22dp"
-        android:backgroundTint="@color/button_background"
-        app:strokeColor="@color/button_stroke"
-        app:strokeWidth="1dp"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="0dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/doctors"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="57dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="@color/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/button_stroke"
+            app:strokeWidth="1dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="14dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="@string/novikov_azamat"
-                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/novikov_azamat"
+                    android:textColor="@color/white" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btn2"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginHorizontal="14dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/button_background"
-        app:strokeColor="@color/button_stroke"
-        app:strokeWidth="1dp"
-        app:cardCornerRadius="4dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:cardElevation="0dp">
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="57dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/button_stroke"
+            app:strokeWidth="1dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="14dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="@string/nurmatov_zamir"
-                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/nurmatov_zamir"
+                    android:textColor="@color/white" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btn3"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginHorizontal="14dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/button_background"
-        app:strokeColor="@color/button_stroke"
-        app:strokeWidth="1dp"
-        app:cardCornerRadius="4dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:cardElevation="0dp">
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="57dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/button_stroke"
+            app:strokeWidth="1dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="14dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="@string/khalilova_munisa"
-                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/khalilova_munisa"
+                    android:textColor="@color/white" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btn4"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginHorizontal="14dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/button_background"
-        app:strokeColor="@color/button_stroke"
-        app:strokeWidth="1dp"
-        app:cardCornerRadius="4dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:cardElevation="0dp">
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="57dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/button_stroke"
+            app:strokeWidth="1dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="14dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="@string/alieva_adina"
-                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/alieva_adina"
+                    android:textColor="@color/white" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btn5"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginHorizontal="14dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/button_background"
-        app:strokeColor="@color/button_stroke"
-        app:strokeWidth="1dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackgroundBorderless"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="0dp">
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="57dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/button_stroke"
+            app:strokeWidth="1dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="14dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="@string/kolesova_viktoria"
-                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/kolesova_viktoria"
+                    android:textColor="@color/white" />
 
-</LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>
