@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Visitka</string>
+    <string name="doctors">Doctors</string>
+    <string name="novikov_azamat">Novikov Azamat</string>
+    <string name="nurmatov_zamir">Nurmatov Zamir</string>
+    <string name="khalilova_munisa">Khalilova Munisa</string>
+    <string name="alieva_adina">Alieva Adina</string>
+    <string name="kolesova_viktoria">Kolesova Viktoria</string>
+    <string name="dentist">Dentist</string>
+    <string name="dental_clinic">Dental Clinic</string>
+    <string name="your_friendly_dental_friend">Your friendly Dental Friend</string>
+    <string name="to_call">To call</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email_us">Email us</string>
+    <string name="visit_website">Visit website</string>
+    <string name="telegram">Telegram</string>
+    <string name="save_contact">Save contact</string>
+    <string name="our_location">Our Location</string>
+    <string name="address">Shopping center Asia Mall\n1st floor</string>
+    <string name="open_map">Open map</string>
+</resources>
